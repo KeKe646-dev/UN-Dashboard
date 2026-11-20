@@ -1,0 +1,71 @@
+body{
+    font-family: 'Google Sans', sans-serif;
+}
+
+
+li, a, button{
+color: #ffffff;
+text-decoration: none;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c2c2c;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.navlinks{
+list-style: none;
+font-size: 20px;
+}
+
+.navlinks li{
+display: inline-block;
+padding: 0px 20px;
+}
+
+.navlinks li a {
+    transition: all 0.3s ease 0s;
+}
+
+.navlinks li a:hover {
+   color: rgb(160, 211, 255);
+}
+
+button{
+    padding: 9px 18px;
+    background-color: #d1d1d1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s ;
+}
+
+#SearchButtons{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+button:hover{
+    background-color: #7e7e7e;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+   
+}
+
+#SearchText{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    font-size: 30px;
+}
