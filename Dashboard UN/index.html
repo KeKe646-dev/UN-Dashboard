@@ -35,8 +35,16 @@
          <button>Time</button>
     </div>
 
-    <div id="SearchFiilters">
-        <button onclick="alert('Sorry Im still working on the drop down menus lol')">Filters</button>
+  
+     <button onclick="toggleFilters()">Filters</button>
+    <div id="SearchFiilters" hidden>
+     
+      
+      <label for="Filters"> Display Data</label>
+                <select name ="Filters" id="Filters">
+                    <option value="Satalite">Satalite Data</option>
+                    <option value="Weather">Weather Data</option>
+                </select>
     </div>
      
     <div id="SideBar">
@@ -44,20 +52,21 @@
                 <h3>Discover</h3>
             </div>
 
-            
-               
-
-
-
             <ul class="navlinks">
                 <li><a href="#">TabA</a></li>
                 <li><a href="#">TabB</a></li>
                 <li><a href="#">TabC</a></li>
-                
             </ul>
-
     </div>
 
-    <h2>Branch push testing. Ignore</h2>
+ <script>
+    function toggleFilters() {
+        const Filters = document.getElementById("SearchFiilters");
+               const filters = document.getElementById("SearchFiilters");
+              filters.hidden = !filters.hidden;
+    
+    }
+</script>
+
 </body>
 </html>
